@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+body {
+  height: 100vh;
+  text-align: center;
+  background-color: #011f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-wrapper {
+  width: 100%;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  margin: auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.btn {
+  margin: 3px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 8px solid black;
+  cursor: pointer;
+}
+
+#startBtn p {
+  line-height: 220px;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.4rem;
+  color: #a4a4a4;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#startBtn p:hover {
+  color: #504b4b;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  border-top-right-radius: 100%;
+  background-color: red;
+}
+
+.green {
+  border-top-left-radius: 100%;
+  background-color: green;
+}
+
+.blue {
+  border-bottom-right-radius: 100%;
+  background-color: blue;
+}
+
+.yellow {
+  border-bottom-left-radius: 100%;
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.circle {
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  background: gray;
+  border: 8px solid black;
+  border-radius: 50%;
+  top: 50%;
+  left: 0%;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  #level-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    height: 160px;
+    width: 160px;
+  }
+
+  .circle {
+    height: 185px;
+    width: 185px;
+  }
+
+  #startBtn p {
+    line-height: 185px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #level-title {
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    height: 120px;
+    width: 120px;
+  }
+
+  .circle {
+    height: 140px;
+    width: 140px;
+  }
+
+  #startBtn p {
+    line-height: 140px;
+    font-size: 1rem;
+  }
+}
